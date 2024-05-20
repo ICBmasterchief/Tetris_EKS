@@ -6,7 +6,7 @@ spec:
   type: LoadBalancer
   ports :
   - port: 80
-    targetPort: 8080
+    targetPort: 80
   selector:
     app: aa2-kubernetes
 ---
@@ -26,6 +26,6 @@ spec:
     spec:
       containers:
       - name: aa2-kubernetes
-        image: icbmasterchief/bookybook-web-pro
+        image: santospardos/sanvalero:tetrisv2
         ports:
-        - containerPort: 8080
+        - containerPort: 80
